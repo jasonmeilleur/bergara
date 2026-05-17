@@ -11,6 +11,7 @@ import type { Product } from "../lib/types";
 import { Badge } from "./Badge";
 import { ProductImage } from "./ProductImage";
 import { ProductPrice } from "./PriceDisplay";
+import { WishlistButton } from "./WishlistButton";
 
 interface ProductCardProps {
   product: Product;
@@ -34,6 +35,13 @@ export function ProductCard({ product }: ProductCardProps) {
           className="absolute inset-0"
           imageClassName="h-full w-full object-contain object-center p-2 sm:p-3"
         />
+        <div className="absolute top-2 left-2 z-10">
+          <WishlistButton
+            product={product}
+            variant={product.variants[0]}
+            iconOnly
+          />
+        </div>
         <div className="absolute top-2 right-2 z-10 flex flex-col items-end gap-1.5">
           {backordered && <Badge tone="warn">Backordered</Badge>}
           {onSale && <Badge tone="accent">Sale</Badge>}

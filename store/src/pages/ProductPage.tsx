@@ -39,6 +39,7 @@ import { ExtraMagazineOffer } from "../design-system/ExtraMagazineOffer";
 import { SezzleNotice } from "../design-system/SezzleNotice";
 import { VariantSelector } from "../design-system/VariantSelector";
 import { useCart } from "../context/CartContext";
+import { WishlistButton } from "../design-system/WishlistButton";
 import { buildProductSchema } from "../lib/schema";
 
 export function ProductPage() {
@@ -195,7 +196,7 @@ export function ProductPage() {
             />
           </div>
 
-          <div className="mt-6">
+          <div className="mt-6 flex flex-wrap gap-3">
             <Button
               className="w-full sm:w-auto"
               onClick={() => {
@@ -205,6 +206,11 @@ export function ProductPage() {
             >
               Add to cart
             </Button>
+            <WishlistButton
+              product={product}
+              variant={activeVariant}
+              className="w-full sm:w-auto"
+            />
           </div>
 
           {specRows.length > 0 && (

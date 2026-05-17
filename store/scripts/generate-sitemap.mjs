@@ -46,6 +46,7 @@ const paths = new Set([
   "/account/sign-up",
   "/faq",
   "/sitemap",
+  "/wishlist",
 ]);
 
 for (const category of ["rifles", "magazines", "accessories"]) {

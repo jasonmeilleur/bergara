@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { CartProvider } from "./context/CartContext";
+import { WishlistProvider } from "./context/WishlistContext";
 import { SiteLayout } from "./layouts/SiteLayout";
 import { CatalogRoute } from "./pages/CatalogRoute";
 import { SeriesPage } from "./pages/SeriesPage";
@@ -13,6 +14,7 @@ import { AccountPage } from "./pages/AccountPage";
 import { LoginPage } from "./pages/LoginPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { SearchPage } from "./pages/SearchPage";
+import { WishlistPage } from "./pages/WishlistPage";
 import { SignUpPage } from "./pages/SignUpPage";
 
 export default function App() {
@@ -20,6 +22,7 @@ export default function App() {
     <BrowserRouter>
       <AuthProvider>
         <CartProvider>
+          <WishlistProvider>
           <Routes>
           <Route element={<SiteLayout />}>
             <Route index element={<HomePage />} />
@@ -31,11 +34,13 @@ export default function App() {
             <Route path="faq" element={<FaqPage />} />
             <Route path="sitemap" element={<SitemapPage />} />
             <Route path="search" element={<SearchPage />} />
+            <Route path="wishlist" element={<WishlistPage />} />
             <Route path=":categoryId/:seriesSlug" element={<SeriesPage />} />
             <Route path=":slug" element={<CatalogRoute />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
           </Routes>
+          </WishlistProvider>
         </CartProvider>
       </AuthProvider>
     </BrowserRouter>

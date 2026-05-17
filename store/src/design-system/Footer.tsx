@@ -30,6 +30,9 @@ export function Footer() {
             <Link to={categoryPath("accessories")} className="text-link hover:text-link-hover">
               Accessories
             </Link>
+            <Link to="/wishlist" className="text-link hover:text-link-hover">
+              Wish list
+            </Link>
             <Link to="/account/login" className="text-link hover:text-link-hover">
               Account
             </Link>
