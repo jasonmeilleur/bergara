@@ -4,6 +4,7 @@ import {
   EMPTY_RIFLE_FILTERS,
   filterRifleProducts,
   getCategoryMeta,
+  hasActiveRifleFilters,
   getProductsByCategory,
   getRifleFilterOptions,
   parseStoreCategory,
@@ -29,6 +30,7 @@ export function CategoryPage() {
   const category = parseStoreCategory(slug);
   const [rifleFilters, setRifleFilters] =
     useState<RifleFilters>(EMPTY_RIFLE_FILTERS);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [sort, setSort] = useState<ProductSortId>(DEFAULT_PRODUCT_SORT);
 
   const allProducts = useMemo(
@@ -50,6 +52,11 @@ export function CategoryPage() {
     () => sortProducts(filteredProducts, sort),
     [filteredProducts, sort],
   );
+
+  const activeFilterCount =
+    rifleFilters.brands.length +
+    rifleFilters.calibers.length +
+    rifleFilters.handedness.length;
 
   if (!category) {
     return (
@@ -84,41 +91,61 @@ export function CategoryPage() {
       </header>
 
       <div
-        className={
-          category === "rifles"
-            ? `${sectionSpacingLg} grid gap-6 lg:grid-cols-[12rem_1fr]`
-            : sectionSpacingLg
-        }
+        className={`${sectionSpacingLg} flex flex-col gap-4`}
       >
-        {category === "rifles" && filterOptions && (
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <ProductSort value={sort} onChange={setSort} className="justify-start" />
+          {category === "rifles" && filterOptions ? (
+            <button
+              type="button"
+              aria-expanded={filtersOpen}
+              aria-controls="rifle-filters"
+              onClick={() => setFiltersOpen((open) => !open)}
+              className={`inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium ring-1 transition-colors ${
+                filtersOpen || hasActiveRifleFilters(rifleFilters)
+                  ? "bg-ink text-surface ring-ink"
+                  : "bg-surface-raised text-ink ring-border hover:bg-surface-muted"
+              }`}
+            >
+              Filter
+              {activeFilterCount > 0 ? (
+                <span className="tabular-nums">({activeFilterCount})</span>
+              ) : null}
+            </button>
+          ) : null}
+        </div>
+
+        {category === "rifles" && filterOptions && filtersOpen ? (
           <RifleFiltersPanel
+            id="rifle-filters"
             options={filterOptions}
             filters={rifleFilters}
             onChange={setRifleFilters}
           />
-        )}
+        ) : null}
 
         {products.length > 0 ? (
-          <div className="flex flex-col gap-4">
-            <ProductSort value={sort} onChange={setSort} />
-            <div className={productGrid}>
+          <div className={productGrid}>
               {products.map((product) => (
                 <ProductCard key={product.slug} product={product} />
               ))}
             </div>
-          </div>
         ) : (
           <div className="flex flex-col items-start gap-3 py-8">
             <p className="text-pretty text-ink-muted">
-              No rifles match the selected filters.
+              {category === "rifles" && hasActiveRifleFilters(rifleFilters)
+                ? "No rifles match the selected filters."
+                : "No products in this category yet."}
             </p>
-            <button
-              type="button"
-              onClick={() => setRifleFilters(EMPTY_RIFLE_FILTERS)}
-              className="text-sm font-medium text-link hover:text-link-hover hover:underline"
-            >
-              Clear filters
-            </button>
+            {category === "rifles" && hasActiveRifleFilters(rifleFilters) ? (
+              <button
+                type="button"
+                onClick={() => setRifleFilters(EMPTY_RIFLE_FILTERS)}
+                className="text-sm font-medium text-link hover:text-link-hover hover:underline"
+              >
+                Clear filters
+              </button>
+            ) : null}
           </div>
         )}
       </div>

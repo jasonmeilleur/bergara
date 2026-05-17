@@ -4,16 +4,25 @@ import { Button } from "./Button";
 import { FilterOptionList } from "./FilterOptionList";
 
 interface RifleFiltersProps {
+  id?: string;
   options: RifleFilterOptions;
   filters: RifleFiltersState;
   onChange: (filters: RifleFiltersState) => void;
 }
 
-export function RifleFilters({ options, filters, onChange }: RifleFiltersProps) {
+export function RifleFilters({
+  id,
+  options,
+  filters,
+  onChange,
+}: RifleFiltersProps) {
   const active = hasActiveRifleFilters(filters);
 
   return (
-    <aside className="rounded-lg bg-surface-raised p-4 ring-1 ring-border">
+    <aside
+      id={id}
+      className="rounded-lg bg-surface-raised p-4 ring-1 ring-border"
+    >
       <div className="flex items-center justify-between gap-4">
         <h2 className="text-sm font-semibold text-ink">Filter</h2>
         {active && (
