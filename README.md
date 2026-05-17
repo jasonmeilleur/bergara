@@ -40,3 +40,18 @@ Run from the `store/` directory:
 - SEO: sitemap, robots.txt, JSON-LD structured data
 
 This is a **demo** storefront — no real payments or orders are processed.
+
+## Deploy on Vercel
+
+1. Import [github.com/jasonmeilleur/bergara](https://github.com/jasonmeilleur/bergara) in the [Vercel dashboard](https://vercel.com/new).
+2. Set **Root Directory** to `store`.
+3. Framework preset: **Vite** (defaults: build `npm run build`, output `dist`).
+4. Add environment variable `VITE_SITE_URL` = your production URL (e.g. `https://bergara.vercel.app`) for sitemap and structured data.
+5. Deploy.
+
+Or from the CLI:
+
+```bash
+cd store
+npx vercel
+```
