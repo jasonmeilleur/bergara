@@ -48,7 +48,15 @@ export function ProductCard({ product }: ProductCardProps) {
           {product.name}
         </h3>
         {rifle && calibers.length > 0 && (
-          <p className="text-sm text-ink-muted">{calibers.join(" · ")}</p>
+          <ul className="flex flex-wrap gap-1.5" aria-label="Available calibers">
+            {calibers.map((caliber) => (
+              <li key={caliber}>
+                <span className="inline-flex rounded-full bg-surface-muted px-2.5 py-0.5 text-xs font-medium text-ink ring-1 ring-border">
+                  {caliber}
+                </span>
+              </li>
+            ))}
+          </ul>
         )}
         <ProductPrice product={product} className="mt-auto" />
         {!rifle && product.variants.length > 1 && (
