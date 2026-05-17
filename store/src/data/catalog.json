@@ -1,0 +1,553 @@
+{
+  "brand": "Bergara",
+  "currency": "USD",
+  "categories": [
+    {
+      "id": "rifles",
+      "name": "Rifles"
+    },
+    {
+      "id": "magazines",
+      "name": "Magazines"
+    },
+    {
+      "id": "mats",
+      "name": "Mats"
+    },
+    {
+      "id": "rails",
+      "name": "Rails"
+    }
+  ],
+  "products": [
+    {
+      "name": "Bergara B-14R Crest CF Rifle",
+      "slug": "bergara-b-14r-crest-cf-rifle",
+      "brand": "Bergara",
+      "product_type": "Rifle",
+      "category": "Rifles",
+      "series": "B-14R",
+      "variants": [
+        {
+          "sku": "B14R008",
+          "price": 1799.0,
+          "availability": "backorder",
+          "caliber": "22 LR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 6.2,
+            "overall_length": 37,
+            "barrel_length": 18,
+            "twist_rate": "1:16",
+            "magazine": "AICS Detachable",
+            "capacity": 10
+          }
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "handedness"
+      ]
+    },
+    {
+      "name": "Bergara B-14R Carbon Rifle",
+      "slug": "bergara-b-14r-carbon-rifle",
+      "brand": "Bergara",
+      "product_type": "Rifle",
+      "category": "Rifles",
+      "series": "B-14R",
+      "variants": [
+        {
+          "sku": "B14R002",
+          "price": 1329.0,
+          "caliber": "22 LR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 8.1,
+            "overall_length": 38,
+            "barrel_length": 18,
+            "twist_rate": "1:16",
+            "magazine": "AICS Detachable",
+            "capacity": 10
+          }
+        },
+        {
+          "sku": "B14R002L",
+          "price": 1329.0,
+          "caliber": "22 LR",
+          "handedness": "Left",
+          "specs": {
+            "weight": 8.1,
+            "overall_length": 38,
+            "barrel_length": 18,
+            "twist_rate": "1:16",
+            "magazine": "AICS Detachable",
+            "capacity": 10
+          }
+        },
+        {
+          "sku": "B14R004",
+          "price": 1329.0,
+          "caliber": "17 HMR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 8.3,
+            "overall_length": 40,
+            "barrel_length": 20,
+            "twist_rate": "1:9",
+            "magazine": "AICS Detachable",
+            "capacity": 10
+          }
+        },
+        {
+          "sku": "B14R006",
+          "price": 1329.0,
+          "caliber": "22 WMR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 8.3,
+            "overall_length": 40,
+            "barrel_length": 20,
+            "twist_rate": "1:16",
+            "magazine": "AICS Detachable",
+            "capacity": 10
+          }
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "handedness"
+      ]
+    },
+    {
+      "name": "Bergara B-14R Steel Rifle",
+      "slug": "bergara-b-14r-steel-rifle",
+      "brand": "Bergara",
+      "product_type": "Rifle",
+      "category": "Rifles",
+      "series": "B-14R",
+      "variants": [
+        {
+          "sku": "B14R001",
+          "price": 1229.0,
+          "caliber": "22 LR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 8.1,
+            "overall_length": 38,
+            "barrel_length": 18,
+            "twist_rate": "1:16",
+            "magazine": "AICS Detachable",
+            "capacity": 10
+          }
+        },
+        {
+          "sku": "B14R001L",
+          "price": 1229.0,
+          "caliber": "22 LR",
+          "handedness": "Left",
+          "specs": {
+            "weight": 8.1,
+            "overall_length": 38,
+            "barrel_length": 18,
+            "twist_rate": "1:16",
+            "magazine": "AICS Detachable",
+            "capacity": 10
+          }
+        },
+        {
+          "sku": "B14R003",
+          "price": 1229.0,
+          "caliber": "17 HMR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 8.3,
+            "overall_length": 40,
+            "barrel_length": 20,
+            "twist_rate": "1:9",
+            "magazine": "AICS Detachable",
+            "capacity": 10
+          }
+        },
+        {
+          "sku": "B14R005",
+          "price": 1229.0,
+          "caliber": "22 WMR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 8.3,
+            "overall_length": 40,
+            "barrel_length": 20,
+            "twist_rate": "1:16",
+            "magazine": "AICS Detachable",
+            "capacity": 10
+          }
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "handedness"
+      ]
+    },
+    {
+      "name": "Bergara BMR-X Carbon Rifle",
+      "slug": "bergara-bmr-x-carbon-rifle",
+      "brand": "Bergara",
+      "product_type": "Rifle",
+      "category": "Rifles",
+      "series": "BMR-X",
+      "variants": [
+        {
+          "sku": "BMR008",
+          "price": 899.0,
+          "caliber": "22 LR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 5.7,
+            "overall_length": 38,
+            "barrel_length": 18,
+            "twist_rate": "1:16",
+            "capacity": "5/10"
+          }
+        },
+        {
+          "sku": "BMR010",
+          "price": 899.0,
+          "caliber": "22 WMR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 5.7,
+            "overall_length": 38,
+            "barrel_length": 18,
+            "twist_rate": "1:16",
+            "capacity": "5/10"
+          }
+        },
+        {
+          "sku": "BMR012",
+          "price": 899.0,
+          "caliber": "17 HMR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 5.7,
+            "overall_length": 38,
+            "barrel_length": 18,
+            "twist_rate": "1:9",
+            "capacity": "5/10"
+          }
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "handedness"
+      ]
+    },
+    {
+      "name": "Bergara BMR-X Steel Rifle",
+      "slug": "bergara-bmr-x-steel-rifle",
+      "brand": "Bergara",
+      "product_type": "Rifle",
+      "category": "Rifles",
+      "series": "BMR-X",
+      "variants": [
+        {
+          "sku": "BMR007",
+          "price": 799.0,
+          "caliber": "22 LR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 6.6,
+            "overall_length": 38,
+            "barrel_length": 18,
+            "twist_rate": "1:16",
+            "capacity": "5/10"
+          }
+        },
+        {
+          "sku": "BMR009",
+          "price": 799.0,
+          "caliber": "22 WMR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 6.6,
+            "overall_length": 38,
+            "barrel_length": 18,
+            "twist_rate": "1:16",
+            "capacity": "5/10"
+          }
+        },
+        {
+          "sku": "BMR011",
+          "price": 799.0,
+          "caliber": "17 HMR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 6.6,
+            "overall_length": 38,
+            "barrel_length": 18,
+            "twist_rate": "1:9",
+            "capacity": "5/10"
+          }
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "handedness"
+      ]
+    },
+    {
+      "name": "Bergara BMR Carbon Rifle",
+      "slug": "bergara-bmr-carbon-rifle",
+      "brand": "Bergara",
+      "product_type": "Rifle",
+      "category": "Rifles",
+      "series": "BMR",
+      "variants": [
+        {
+          "sku": "BXR002",
+          "price": 729.0,
+          "sale_price": 699.0,
+          "caliber": "22 LR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 4.7,
+            "overall_length": 34.5,
+            "barrel_length": 16.5,
+            "twist_rate": "1:16",
+            "magazine": "Rotary",
+            "capacity": 10
+          }
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "handedness"
+      ]
+    },
+    {
+      "name": "Bergara BMR Steel Rifle",
+      "slug": "bergara-bmr-steel-rifle",
+      "brand": "Bergara",
+      "product_type": "Rifle",
+      "category": "Rifles",
+      "series": "BMR",
+      "variants": [
+        {
+          "sku": "BMR001",
+          "price": 699.0,
+          "caliber": "22 LR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 5.5,
+            "overall_length": 36,
+            "barrel_length": 18,
+            "twist_rate": "1:16",
+            "magazine": "Two Detach Mag",
+            "capacity": "5/10"
+          }
+        },
+        {
+          "sku": "BMR003",
+          "price": 699.0,
+          "caliber": "22 WMR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 5.8,
+            "overall_length": 38,
+            "barrel_length": 20,
+            "twist_rate": "1:16",
+            "magazine": "Two Detach Mag",
+            "capacity": "5/10"
+          }
+        },
+        {
+          "sku": "BMR005",
+          "price": 699.0,
+          "caliber": "17 HMR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 5.8,
+            "overall_length": 38,
+            "barrel_length": 20,
+            "twist_rate": "1:9",
+            "magazine": "Two Detach Mag",
+            "capacity": "5/10"
+          }
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "handedness"
+      ]
+    },
+    {
+      "name": "Bergara BXR Carbon Rifle",
+      "slug": "bergara-bxr-carbon-rifle",
+      "brand": "Bergara",
+      "product_type": "Rifle",
+      "category": "Rifles",
+      "series": "BXR",
+      "variants": [
+        {
+          "sku": "BXR002",
+          "price": 779.0,
+          "caliber": "22 LR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 4.7,
+            "overall_length": 34.5,
+            "barrel_length": 16.5,
+            "twist_rate": "1:16",
+            "magazine": "Rotary",
+            "capacity": 10
+          }
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "handedness"
+      ]
+    },
+    {
+      "name": "Bergara BXR Steel Rifle",
+      "slug": "bergara-bxr-steel-rifle",
+      "brand": "Bergara",
+      "product_type": "Rifle",
+      "category": "Rifles",
+      "series": "BXR",
+      "variants": [
+        {
+          "sku": "BXR001",
+          "price": 619.0,
+          "caliber": "22 LR",
+          "handedness": "Right",
+          "specs": {
+            "weight": 5.2,
+            "overall_length": 34.5,
+            "barrel_length": 16.5,
+            "twist_rate": "1:16",
+            "magazine": "Rotary",
+            "capacity": 10
+          }
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "handedness"
+      ]
+    },
+    {
+      "name": "Bergara BMR Magazine",
+      "slug": "bergara-bmr-magazine",
+      "brand": "Bergara",
+      "product_type": "Magazine",
+      "category": "Magazines",
+      "variants": [
+        {
+          "sku": "BA0024",
+          "price": 39.99,
+          "caliber": "22 LR",
+          "capacity": 10
+        },
+        {
+          "sku": "BA0029",
+          "price": 39.99,
+          "caliber": "17 HMR",
+          "capacity": 10
+        },
+        {
+          "sku": "BA0029",
+          "price": 39.99,
+          "caliber": "22 WMR",
+          "capacity": 10
+        },
+        {
+          "sku": "BA0023",
+          "price": 39.99,
+          "caliber": "22 LR",
+          "capacity": 5
+        },
+        {
+          "sku": "BA0028",
+          "price": 39.99,
+          "caliber": "17 HMR",
+          "capacity": 5
+        },
+        {
+          "sku": "BA0028",
+          "price": 39.99,
+          "caliber": "22 WMR",
+          "capacity": 5
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "capacity"
+      ]
+    },
+    {
+      "name": "Bergara B14R AICS Magazine",
+      "slug": "bergara-b14r-aics-magazine",
+      "brand": "Bergara",
+      "product_type": "Magazine",
+      "category": "Magazines",
+      "variants": [
+        {
+          "sku": "BA0016",
+          "price": 49.99,
+          "caliber": "22 LR",
+          "capacity": 10
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "capacity"
+      ]
+    },
+    {
+      "name": "Bergara BMR Rotary Magazine",
+      "slug": "bergara-bxr-rotary-magazine",
+      "brand": "Bergara",
+      "product_type": "Magazine",
+      "category": "Magazines",
+      "variants": [
+        {
+          "sku": "BA0005",
+          "price": 34.99,
+          "caliber": "22 LR",
+          "capacity": 10
+        }
+      ],
+      "variant_options": [
+        "caliber",
+        "capacity"
+      ]
+    },
+    {
+      "name": "Bergara B14R Rifle Mat",
+      "slug": "bergara-b14r-rifle-mat",
+      "brand": "Bergara",
+      "product_type": "Mat",
+      "category": "Mats",
+      "variants": [
+        {
+          "sku": "MC2152",
+          "price": 26.99
+        }
+      ]
+    },
+    {
+      "name": "Bergara BMR Rail",
+      "slug": "bergara-bmr-rail",
+      "brand": "Bergara",
+      "product_type": "Rail",
+      "category": "Rails",
+      "variants": [
+        {
+          "sku": "BA0025",
+          "price": 29.99
+        }
+      ]
+    }
+  ]
+}

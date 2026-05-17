@@ -1,0 +1,32 @@
+Product,Slug,,Slug,Product Code,UPC,Price (MSRP),Caliber,Weight,Overall Length,Barrel Length,Twist Rate,Magazine,Capacity,Handedness,Brand,Product Type,Category,Series
+Bergara B-14R Crest CF Rifle,,,bergara-b-14r-crest-cf-rifle,B14R008,,"$1,799.00",22 LR,6.2,37,18,1:16,AICS Detachable,10,Right,Bergara,Rifle,Rifles,B-14R
+Bergara B-14R Carbon Rifle,,,bergara-b-14r-carbon-rifle,B14R002,,"$1,329.00",22 LR,8.1,38,18,1:16,AICS Detachable,10,Right,Bergara,Rifle,Rifles,B-14R
+,,,,B14R002L,,"$1,329.00",22 LR,8.1,38,18,1:16,AICS Detachable,10,Left,Bergara,Rifle,Rifles,B-14R
+,,,,B14R004,,"$1,329.00",17 HMR,8.3,40,20,1:9,AICS Detachable,10,Right,Bergara,Rifle,Rifles,B-14R
+,,,,B14R006,,"$1,329.00",22 WMR,8.3,40,20,1:16,AICS Detachable,10,Right,Bergara,Rifle,Rifles,B-14R
+Bergara B-14R Steel Rifle,,,bergara-b-14r-steel-rifle,B14R001,,"$1,229.00",22 LR,8.1,38,18,1:16,AICS Detachable,10,Right,Bergara,Rifle,Rifles,B-14R
+,,,,B14R001L,,"$1,229.00",22 LR,8.1,38,18,1:16,AICS Detachable,10,Left,Bergara,Rifle,Rifles,B-14R
+,,,,B14R003,,"$1,229.00",17 HMR,8.3,40,20,1:9,AICS Detachable,10,Right,Bergara,Rifle,Rifles,B-14R
+,,,,B14R005,,"$1,229.00",22 WMR,8.3,40,20,1:16,AICS Detachable,10,Right,Bergara,Rifle,Rifles,B-14R
+Bergara BMR-X Carbon Rifle,,,bergara-bmr-x-carbon-rifle,BMR008,,$899.00,22 LR,5.7,38,18,1:16,,5/10,Right,Bergara,Rifle,Rifles,BMR-X
+,,,,BMR010,,$899.00,22 WMR,5.7,38,18,1:16,,5/10,Right,Bergara,Rifle,Rifles,BMR-X
+,,,,BMR012,,$899.00,17 HMR,5.7,38,18,1:9,,5/10,Right,Bergara,Rifle,Rifles,BMR-X
+Bergara BMR-X Steel Rifle,,,bergara-bmr-x-steel-rifle,BMR007,,$799.00,22 LR,6.6,38,18,1:16,,5/10,Right,Bergara,Rifle,Rifles,BMR-X
+,,,,BMR009,,$799.00,22 WMR,6.6,38,18,1:16,,5/10,Right,Bergara,Rifle,Rifles,BMR-X
+,,,,BMR011,,$799.00,17 HMR,6.6,38,18,1:9,,5/10,Right,Bergara,Rifle,Rifles,BMR-X
+Bergara BMR Carbon Rifle,,,bergara-bmr-carbon-rifle,BXR002,,$729.00,22 LR,4.7,34.5,16.5,1:16,Rotary,10,Right,Bergara,Rifle,Rifles,BMR
+Bergara BMR Steel Rifle,,,bergara-bmr-steel-rifle,BMR001,,$699.00,22 LR,5.5,36,18,1:16,Two Detach Mag,5/10,Right,Bergara,Rifle,Rifles,BMR
+,,,,BMR003,,$699.00,22 WMR,5.8,38,20,1:16,Two Detach Mag,5/10,Right,Bergara,Rifle,Rifles,BMR
+,,,,BMR005,,$699.00,17 HMR,5.8,38,20,1:9,Two Detach Mag,5/10,Right,Bergara,Rifle,Rifles,BMR
+Bergara BXR Carbon Rifle,,,bergara-bxr-carbon-rifle,BXR002,,$779.00,22 LR,4.7,34.5,16.5,1:16,Rotary,10,Right,Bergara,Rifle,Rifles,BXR
+Bergara BXR Steel Rifle,,,bergara-bxr-steel-rifle,BXR001,,$619.00,22 LR,5.2,34.5,16.5,1:16,Rotary,10,Right,Bergara,Rifle,Rifles,BXR
+Bergara BMR Magazine,,,bergara-bmr-magazine,BA0024,,$39.99,22 LR,,,,,,10,,Bergara,Magazine,Magazines,
+,,,,BA0029,,$39.99,17 HMR,,,,,,10,,Bergara,Magazine,Magazines,
+,,,,BA0029,,$39.99,22 WMR,,,,,,10,,Bergara,Magazine,Magazines,
+,,,,BA0023,,$39.99,22 LR,,,,,,5,,Bergara,Magazine,Magazines,
+,,,,BA0028,,$39.99,17 HMR,,,,,,5,,Bergara,Magazine,Magazines,
+,,,,BA0028,,$39.99,22 WMR,,,,,,5,,Bergara,Magazine,Magazines,
+Bergara B14R AICS Magazine,,,bergara-b14r-aics-magazine,BA0016,,$49.99,22 LR,,,,,,10,,Bergara,Magazine,Magazines,
+Bergara BMR Rotary Magazine,,,bergara-bxr-rotary-magazine,BA0005,,$34.99,22 LR,,,,,,10,,Bergara,Magazine,Magazines,
+Bergara B14R Rifle Mat,,,bergara-b14r-rifle-mat,MC2152,,$26.99,,,,,,,,,Bergara,Mat,Mats,
+Bergara BMR Rail,,,bergara-bmr-rail,BA0025,,$29.99,,,,,,,,,Bergara,Rail,Rails,
