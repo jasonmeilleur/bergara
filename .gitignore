@@ -7,8 +7,9 @@ store/dist-ssr/
 .env
 .env.*
 !.env.example
+!store/.env.example
 store/.env
-store/.env.*
+store/.env.local
 *.local
 
 # Logs
