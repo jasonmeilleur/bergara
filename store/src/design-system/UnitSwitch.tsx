@@ -1,13 +1,13 @@
-import type { LengthUnit } from "../lib/units";
+import type { SpecUnitSystem } from "../lib/units";
 
-const OPTIONS: { id: LengthUnit; label: string }[] = [
-  { id: "feet", label: "feet" },
-  { id: "meters", label: "meters" },
+const OPTIONS: { id: SpecUnitSystem; label: string }[] = [
+  { id: "imperial", label: "in · lbs" },
+  { id: "metric", label: "cm · kg" },
 ];
 
 interface UnitSwitchProps {
-  value: LengthUnit;
-  onChange: (value: LengthUnit) => void;
+  value: SpecUnitSystem;
+  onChange: (value: SpecUnitSystem) => void;
 }
 
 export function UnitSwitch({ value, onChange }: UnitSwitchProps) {
@@ -27,7 +27,7 @@ export function UnitSwitch({ value, onChange }: UnitSwitchProps) {
               type="button"
               aria-pressed={selected}
               onClick={() => onChange(option.id)}
-              className={`px-2.5 py-1 font-medium capitalize transition-colors ${
+              className={`px-2.5 py-1 font-medium transition-colors ${
                 index > 0 ? "border-l border-border" : ""
               } ${
                 selected

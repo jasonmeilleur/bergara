@@ -1,18 +1,20 @@
-export type LengthUnit = "feet" | "meters";
+export type SpecUnitSystem = "imperial" | "metric";
 
-const INCHES_PER_FOOT = 12;
-const INCHES_TO_METERS = 0.0254;
+const INCHES_TO_CM = 2.54;
 const LBS_TO_KG = 0.453592;
 
-export function formatLengthFromInches(inches: number, unit: LengthUnit): string {
-  if (unit === "feet") {
-    return `${(inches / INCHES_PER_FOOT).toFixed(1)} ft`;
+export function formatLengthFromInches(
+  inches: number,
+  system: SpecUnitSystem,
+): string {
+  if (system === "imperial") {
+    return `${inches} in`;
   }
-  return `${(inches * INCHES_TO_METERS).toFixed(2)} m`;
+  return `${(inches * INCHES_TO_CM).toFixed(1)} cm`;
 }
 
-export function formatWeightFromLbs(lbs: number, unit: LengthUnit): string {
-  if (unit === "feet") {
+export function formatWeightFromLbs(lbs: number, system: SpecUnitSystem): string {
+  if (system === "imperial") {
     return `${lbs} lbs`;
   }
   return `${(lbs * LBS_TO_KG).toFixed(1)} kg`;
