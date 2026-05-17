@@ -208,12 +208,9 @@ export function ProductPage() {
           </div>
 
           {specRows.length > 0 && (
-            <section className="mt-6">
-              <h2 className="text-base font-semibold text-ink">Specifications</h2>
-              <div className="mt-3">
-                <SpecTable rows={specRows} />
-              </div>
-            </section>
+            <div className="mt-6">
+              <SpecTable title="Specifications" rows={specRows} />
+            </div>
           )}
 
           {isRifle(product) && (
