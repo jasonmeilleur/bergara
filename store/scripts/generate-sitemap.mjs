@@ -7,10 +7,9 @@ const catalog = JSON.parse(
   readFileSync(join(root, "src/data/catalog.json"), "utf8"),
 );
 
-const siteUrl = (process.env.VITE_SITE_URL ?? "https://bergara.example").replace(
-  /\/$/,
-  "",
-);
+const siteUrl = (
+  process.env.VITE_SITE_URL ?? "https://store-two-plum.vercel.app"
+).replace(/\/$/, "");
 
 const CALIBER_SLUG = (value) =>
   String(value).toLowerCase().replace(/[^a-z0-9]+/g, "");
@@ -84,4 +83,13 @@ ${urls}
 `;
 
 writeFileSync(join(root, "public/sitemap.xml"), xml);
+
+const robots = `User-agent: *
+Allow: /
+
+Sitemap: ${siteUrl}/sitemap.xml
+`;
+
+writeFileSync(join(root, "public/robots.txt"), robots);
 console.log(`Wrote ${paths.size} URLs to public/sitemap.xml`);
+console.log(`Wrote robots.txt (Sitemap: ${siteUrl}/sitemap.xml)`);
