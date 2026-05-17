@@ -40,6 +40,7 @@ import { SezzleNotice } from "../design-system/SezzleNotice";
 import { VariantSelector } from "../design-system/VariantSelector";
 import { useCart } from "../context/CartContext";
 import { WishlistButton } from "../design-system/WishlistButton";
+import { CompareRifleToggle } from "../design-system/CompareRifleToggle";
 import { buildProductSchema } from "../lib/schema";
 
 export function ProductPage() {
@@ -211,6 +212,12 @@ export function ProductPage() {
               variant={activeVariant}
               className="w-full sm:w-auto"
             />
+            {isRifle(product) ? (
+              <CompareRifleToggle
+                productSlug={product.slug}
+                className="w-full sm:w-auto sm:px-3 sm:py-2"
+              />
+            ) : null}
           </div>
 
           {specRows.length > 0 && (

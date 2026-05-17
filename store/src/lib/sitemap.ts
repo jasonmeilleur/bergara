@@ -26,6 +26,7 @@ const STATIC_PAGES: SitemapLink[] = [
   { label: "FAQ", path: "/faq" },
   { label: "Search", path: "/search" },
   { label: "Wish list", path: "/wishlist" },
+  { label: "Compare rifles", path: "/rifles/compare" },
   { label: "Sitemap", path: "/sitemap" },
 ];
 

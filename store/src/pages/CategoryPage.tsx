@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { useCompareRifles } from "../context/CompareRiflesContext";
+import { COMPARE_RIFLES_PATH } from "../lib/compare-rifles";
 import {
   EMPTY_RIFLE_FILTERS,
   filterRifleProducts,
@@ -32,6 +34,7 @@ export function CategoryPage() {
     useState<RifleFilters>(EMPTY_RIFLE_FILTERS);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [sort, setSort] = useState<ProductSortId>(DEFAULT_PRODUCT_SORT);
+  const { itemCount: compareCount } = useCompareRifles();
 
   const allProducts = useMemo(
     () => (category ? getProductsByCategory(category) : []),
@@ -95,7 +98,17 @@ export function CategoryPage() {
       >
         <div className="flex flex-wrap items-center justify-between gap-3">
           <ProductSort value={sort} onChange={setSort} className="justify-start" />
-          {category === "rifles" && filterOptions ? (
+          {category === "rifles" ? (
+            <div className="flex flex-wrap items-center gap-2">
+              {compareCount >= 2 ? (
+                <Link
+                  to={COMPARE_RIFLES_PATH}
+                  className="inline-flex items-center rounded-md bg-accent px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-accent-hover"
+                >
+                  Compare ({compareCount})
+                </Link>
+              ) : null}
+              {filterOptions ? (
             <button
               type="button"
               aria-expanded={filtersOpen}
@@ -112,6 +125,8 @@ export function CategoryPage() {
                 <span className="tabular-nums">({activeFilterCount})</span>
               ) : null}
             </button>
+              ) : null}
+            </div>
           ) : null}
         </div>
 

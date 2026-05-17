@@ -33,6 +33,9 @@ export function Footer() {
             <Link to="/wishlist" className="text-link hover:text-link-hover">
               Wish list
             </Link>
+            <Link to="/rifles/compare" className="text-link hover:text-link-hover">
+              Compare rifles
+            </Link>
             <Link to="/account/login" className="text-link hover:text-link-hover">
               Account
             </Link>

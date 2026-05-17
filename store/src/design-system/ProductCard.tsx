@@ -12,6 +12,7 @@ import { Badge } from "./Badge";
 import { ProductImage } from "./ProductImage";
 import { ProductPrice } from "./PriceDisplay";
 import { WishlistButton } from "./WishlistButton";
+import { CompareRifleToggle } from "./CompareRifleToggle";
 
 interface ProductCardProps {
   product: Product;
@@ -66,6 +67,9 @@ export function ProductCard({ product }: ProductCardProps) {
             ))}
           </ul>
         )}
+        {rifle ? (
+          <CompareRifleToggle productSlug={product.slug} className="mt-1" />
+        ) : null}
         <ProductPrice product={product} className="mt-auto" />
         {!rifle && product.variants.length > 1 && (
           <p className="text-sm text-ink-muted">

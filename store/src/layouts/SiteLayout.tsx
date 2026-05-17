@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { CartDrawer } from "../design-system/CartDrawer";
+import { CompareRiflesBar } from "../design-system/CompareRiflesBar";
 import { CookieBanner } from "../design-system/CookieBanner";
 import { Footer } from "../design-system/Footer";
 import { Header } from "../design-system/Header";
@@ -13,6 +14,7 @@ export function SiteLayout() {
       </main>
       <Footer />
       <CartDrawer />
+      <CompareRiflesBar />
       <CookieBanner />
     </div>
   );
